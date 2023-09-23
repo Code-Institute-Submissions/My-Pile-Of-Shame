@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Roboto:wght@700&display=swap');
+
 body {
-    background-color: blue;
+    font-family: 'Roboto';
+}
+
+.splash {
+    background-color: #005F73;
+    color: #ced4da;
+}
+
+.navbar {
+    background-color: #001219
+}
+
+
+.logo {
+    font-family: 'Oswald';
+    letter-spacing: -1.5px;
 }
