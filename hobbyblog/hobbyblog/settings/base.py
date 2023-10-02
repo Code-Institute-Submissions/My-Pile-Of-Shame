@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG') == 'False'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [os.environ.get('Nicolas Saavedra')]
 
 
 # Application definition
@@ -73,7 +73,9 @@ WSGI_APPLICATION = 'hobbyblog.wsgi.application'
 #}
 
 DATABASES = {
-   'default': dj_database_url.parse('postgres://zmdoxymr:gyEEBpEGgk5m3xudNa4S_A8BCzN2mPva@dumbo.db.elephantsql.com/zmdoxymr')
+   'default':dj_database_url.parse(os.environ.get(
+   'postgres://zmdoxymr:gyEEBpEGgk5m3xudNa4S_A8BCzN2mPva@dumbo.db.elephantsql.com/zmdoxymr'
+   ))
 }
 
 
